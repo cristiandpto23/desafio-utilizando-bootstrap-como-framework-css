@@ -8,11 +8,18 @@ pages/
 themes/
 */
 
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 @import 'vendors/bootstrap';
+
+@import 'base/typography';
 
 @import 'layout/footer';
 
 @import 'components/hero';
 @import 'components/project';
+@import 'components/skill';
 
 @import 'pages/home';
