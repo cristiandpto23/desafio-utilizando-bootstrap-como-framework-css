@@ -22,6 +22,7 @@ $color-bg-primary: #F1FAEE;
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12035,6 +12036,16 @@ textarea.form-control-lg {
   background-color: rgb(247, 247, 247);
 }
 
+/* Header */
+.header__title {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.header__li {
+  color: #6c757d;
+}
+
 /* Contacto */
 .contact__i {
   padding-top: 0.2rem;
@@ -12058,6 +12069,10 @@ textarea.form-control-lg {
 .hero__content {
   width: 100%;
   height: 50%;
+}
+.hero__button {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 /* PROYECTOS */
@@ -12124,4 +12139,8 @@ textarea.form-control-lg {
 .skill__p {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
 }
