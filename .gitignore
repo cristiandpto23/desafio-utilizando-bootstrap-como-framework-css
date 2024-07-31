@@ -1,4 +1,3 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Dependency directories
+node_modules/
+jspm_packages/
