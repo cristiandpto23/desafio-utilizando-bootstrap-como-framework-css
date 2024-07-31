@@ -1,0 +1,18 @@
+/*
+abstracts/
+vendors/
+base/
+layout/
+components/
+pages/
+themes/
+*/
+
+@import 'vendors/bootstrap';
+
+@import 'layout/footer';
+
+@import 'components/hero';
+@import 'components/project';
+
+@import 'pages/home';

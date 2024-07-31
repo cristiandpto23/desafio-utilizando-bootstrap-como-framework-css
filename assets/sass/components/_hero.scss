@@ -1,0 +1,19 @@
+/* HERO */
+
+.hero {
+    
+    &__container-one {
+        width: 50%;
+    }
+
+    &__img {
+        width: 95%;
+        height: 25rem; 
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    &__container-two {
+        width: 50%;
+    }
+}
