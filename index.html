@@ -11,9 +11,9 @@
     <!-- HEADER -->
     <header class="header">
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Peter Parker</a>
+                <a class="navbar-brand text-primary fw-bold" href="#">Peter Parker</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,13 +23,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis habilidades</a>
+                        <a class="nav-link" href="#habilidades">Mis habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                     </ul>
                 </div>
@@ -38,25 +38,27 @@
 
 
         <!-- HERO -->
-        <section class="hero col-12 col-lg-8 m-auto container">
-            <div class="row">
+        <section class="hero col-12 col-lg-8 m-auto container my-5">
+            <div class="row align-items-center gap-4 gap-lg-2">
                 <section class="hero__container-one col-12 col-lg">
-                    <img src="./assets/img/meetcoffee.png" alt="Foto perfil de Peter Parker" class="hero__img">
+                    <img src="./assets/img/developer.svg" alt="Foto perfil de Peter Parker" class="hero__img">
                 </section>
                 <section class="hero__container-two col-12 col-lg d-flex align-items-center">
                     <div class="hero__content">
-                        <h1 class="hero__title">Soy Peter Parker</h1>
-                        <h2 class="hero__subtitle">Desarrollador FrontEnd</h2>
+                        <h1 class="hero__title text-primary">Soy Peter Parker</h1>
+                        <h2 class="hero__subtitle text-secondary">Desarrollador FrontEnd</h2>
                         <p class="hero__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta blanditiis eligendi ipsa quos reiciendis! Excepturi consecquatur dolorem laudantium eaque corrupti, voluptatum beatae suscipit in, sed natus accusantium unde ipsum.</p>
+                        <div id="habilidades"></div>
                         <button type="button" class="btn btn-primary btn-lg">Contáctame</button>
-
                 </section>
+
             </div>
         </section>
+
     </header>
 
         <!-- MAIN -->
-        <main class="main px-3">
+        <main class="main px-1">
 
             <!-- HABILIDADES -->
             <section class="skill d-flex flex-column justify-content-center align-items-center mt-5 mb-4">
@@ -95,49 +97,56 @@
                             <i class="fa-brands fa-vuejs skill__i skill__i--vue"></i>
                             <p class="skill__p">Vue</p>
                         </div>
+                        <div id="proyectos"></div>
+
                     </div>
+
                 </div>
 
             </section>
 
+            
             <!-- PROYECTOS -->
-            <section class="project d-flex flex-column justify-content-center align-items-center mt-5 mb-4">
+            <section class="project d-flex flex-column justify-content-center align-items-center mt-5 mb-4" >
                 <h2 class="title--h2">Mis proyectos</h2>
-                <div class="col-8 d-flex gap-5 justify-content-between project__container mt-5">
-                    <div class="project__subcontainer d-flex flex-column">
-                        <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
-                        <p class="project__p">Meet & Coffee</p>
-                    </div>
-                    <div class="project__subcontainer d-flex flex-column">
-                        <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
-                        <p class="project__p">Meet & Coffee</p>
-                    </div>
-                    <div class="project__subcontainer d-flex flex-column">
-                        <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
-                        <p class="project__p">Meet & Coffee</p>
-                    </div>
-                    <div class="project__subcontainer d-flex flex-column">
-                        <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
-                        <p class="project__p">Meet & Coffee</p>
+
+                <div class="container col-12 col-lg-8 gap-5 project__container mt-5">
+                    <div class="row">
+                        <div class="project__subcontainer d-flex flex-column col-6 col-lg">
+                            <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
+                            <p class="project__p">Meet & Coffee</p>
+                        </div>
+                        <div class="project__subcontainer d-flex flex-column col-6 col-lg">
+                            <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
+                            <p class="project__p">Meet & Coffee</p>
+                        </div>
+                        <div class="project__subcontainer d-flex flex-column col-6 col-lg">
+                            <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
+                            <p class="project__p">Meet & Coffee</p>
+                        </div>
+                        <div class="project__subcontainer d-flex flex-column col-6 col-lg">
+                            <img src="./assets/img/meetcoffee.png" alt="" class="project__img">
+                            <p class="project__p">Meet & Coffee</p>
+                        </div>
                     </div>
                 </div>
 
-
+            <div id="contacto"></div>
             </section>
         </main>
 
         <!-- FOOTER -->
-        <footer class="footer d-flex flex-column justify-content-center align-items-center mt-5 mb-5 mx-2">
+        <footer class="footer d-flex flex-column justify-content-center align-items-center mt-5 mb-5 px-2">
             <h2 class="title--h2">Contáctame</h2>
-            <div class="footer__content d-flex justify-content-center col-8 m-auto  mt-5">
+            <div class="footer__content d-flex flex-lg-row flex-column gap-5 justify-content-center col-12 col-lg-8 m-auto mt-5">
                 <section class="footer__container-one">
                     <!--FORM -->
                     <form class="form">
                         <section class="row mt-4">
-                            <div class="col-12 col-md-6 mb-3">
+                            <div class="col-6 mb-3">
                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                             </div>
-                            <div class="col-12 col-md-6 mb-3">
+                            <div class="col-6 mb-3">
                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
                             </div>
                         </section>
@@ -147,33 +156,33 @@
                         <div class="mb-3">
                             <textarea class="form-control" placeholder="Escribe tu mensaje" id="floatingTextarea"></textarea>
                         </div>
-                        <button type="button" class="mt-1 btn btn-outline-success">Enviar</button>
+                        <button type="button" class="mt-1 btn btn-outline-primary bg-primary text-white col-12 col-lg-3 ">Enviar</button>
 
                     </form>
                 </section>
                 <!-- CONTACTO -->
-                <section class="footer__container-two d-flex align-items-center">
+                <section class="footer__container-two d-flex align-items-center text-primary">
                     <div class="contact">
                         <ul class="contact__ul d-flex flex-column align-items-start">
                             <li class="contact__li d-flex">
-                                <i class="fa-solid fa-phone"></i>
-                                <p class="contact_p">+56999887766</p>
+                                <i class="fa-solid fa-phone contact__i"></i>
+                                <p class="contact__p">+56999887766</p>
                             </li>
                             <li class="contact__li d-flex">
-                                <i class="fa-solid fa-envelope"></i>
-                                <p class="contact_p">tuemail@gmail.com</p>
+                                <i class="fa-solid fa-envelope contact__i"></i>
+                                <p class="contact__p">tuemail@gmail.com</p>
                             </li>
                             <li class="contact__li d-flex">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <p class="contact_p">tulinkedin</p>
+                                <i class="fa-brands fa-linkedin contact__i"></i>
+                                <p class="contact__p">tulinkedin</p>
                             </li>
                             <li class="contact__li d-flex">
-                                <i class="fa-brands fa-github"></i>
-                                <p class="contact_p">Tu GitHub</p>
+                                <i class="fa-brands fa-github contact__i"></i>
+                                <p class="contact__p">Tu GitHub</p>
                             </li>
                             <li class="contact__li d-flex">
-                                <i class="fa-brands fa-instagram"></i>
-                                <p class="contact_p">Tu Instagram</p>
+                                <i class="fa-brands fa-instagram contact__i"></i>
+                                <p class="contact__p">Tu Instagram</p>
                             </li>
                         
                         </ul>
