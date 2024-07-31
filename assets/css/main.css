@@ -12027,9 +12027,6 @@ textarea.form-control-lg {
 }
 
 /* HERO */
-.hero__container-one {
-  width: 50%;
-}
 .hero__img {
   width: 95%;
   height: 25rem;
@@ -12037,9 +12034,6 @@ textarea.form-control-lg {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-.hero__container-two {
-  width: 50%;
 }
 
 /* PROYECTOS */
